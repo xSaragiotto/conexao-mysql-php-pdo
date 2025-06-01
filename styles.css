@@ -1,0 +1,273 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo e container geral */
+body {
+    background-color: #f8f9fa;
+    color: #222;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Títulos principais */
+h1, .titulo, .titulo-principal {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+/* FORMULÁRIO: geral */
+.formulario, .form-edit, .form-busca {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px 25px;
+    max-width: 480px;
+    margin: 0 auto 30px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+/* Campos de formulário */
+.campo, .campo-form {
+    margin-bottom: 18px;
+}
+
+label, .label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+/* Botões */
+.campo-botao button,
+.campo-form button,
+.form-busca button {
+    cursor: pointer;
+    background-color: #2980b9;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.campo-botao button:hover,
+.campo-form button:hover,
+.form-busca button:hover {
+    background-color: #1c5980;
+}
+
+/* Link para voltar / limpar busca / adicionar */
+.voltar,
+.adicionar-usuario,
+.form-busca a {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.voltar a,
+.adicionar-usuario a,
+.form-busca a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.voltar a:hover,
+.adicionar-usuario a:hover,
+.form-busca a:hover {
+    color: #1c5980;
+}
+
+/* Formulário de busca */
+.form-busca {
+    max-width: 480px;
+    margin: 0 auto 25px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.form-busca input[type="text"] {
+    flex: 1;
+    max-width: 300px;
+}
+
+.form-busca button {
+    flex-shrink: 0;
+}
+
+/* Tabela de usuários */
+.tabela-usuario {
+    width: 90%;
+    max-width: 80%;
+    margin: 0 auto 40px auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-size: 16px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.tabela-usuario thead tr {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.tabela-usuario th,
+.tabela-usuario td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tabela-usuario tbody tr {
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.tabela-usuario tbody tr:hover {
+    background-color: #ecf0f1;
+}
+
+/* Ações: link editar e botão excluir */
+.tabela-usuario a {
+    color: #2980b9;
+
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.tabela-usuario a:hover {
+    color: #1c5980;
+}
+
+.tabela-usuario form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.tabela-usuario .btn-link {
+    background: none;
+    border: none;
+    color: #c0392b;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.tabela-usuario .btn-link:hover {
+    color: #7a1f19;
+}
+
+/* Container para editar */
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+/* Input text para edit */
+.input-text {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-text:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+/* Botão primário usado no editar */
+.btn-primary {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #27ae60;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e8449;
+}
+
+.paginacao {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Paginação*/
+.paginacao a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #eee;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+}
+
+.paginacao a.pagina-ativa {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+    .formulario,
+    .form-edit,
+    .form-busca,
+    .container,
+    .tabela-usuario {
+        width: 95%;
+    }
+
+    .form-busca {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-busca button {
+        width: 100%;
+    }
+}
